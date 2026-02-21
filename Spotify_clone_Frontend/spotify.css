@@ -1,0 +1,1024 @@
+body{
+    font-family: "Montserrat", sans-serif; 
+    margin:0;
+    background-color: rgb(27, 24, 24);
+    color:white;
+    overflow:hidden;
+}
+.main{
+ display: flex;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+}
+
+ .sticky-nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000; 
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    /* height: 30px; */
+    width: 38px;
+    height: 38px;
+    background-color: #323232;  
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    color:rgb(24, 20, 20);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    cursor: pointer;
+}
+
+.home-btn {
+    border-style: none;
+    width: 43px;
+    height: 43px;
+    background-color: #2f2c2c;  
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    color:white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-left: 30rem;
+}
+.home-btn:hover{
+    background-color: #4e4a4a;
+}
+
+.search-bar {
+    background-color: #222220;
+    padding: 8px 15px 8px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height:25px;
+    width:24rem;
+    margin-right: 5rem;
+    border:1px solid rgb(59, 57, 57);
+}
+.search-bar:hover{
+    box-shadow: 0px 0px 8px 1px rgba(55, 53, 53, 0.2); 
+    border: 1px solid rgb(100, 98, 98); 
+    transition: all 0.2s ease;
+}
+.glass-icon{
+    opacity:0.7;
+
+}
+.glass-icon:hover{
+    opacity:1;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(231, 225, 225);
+    width: 260px;
+    /* flex:10px; */
+   
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.badge {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    opacity:0.9;
+    
+}
+.white-badge {
+    background-color: white !important;
+    color: black !important;
+    font-weight: 700;
+}
+
+.dark-badge {
+    background-color: rgb(40, 39, 39) !important;
+    color: white !important;
+    font-weight: 700;
+}
+
+.white-badge:hover, .dark-badge:hover {
+    transform: scale(1.05);
+}
+.profile {
+    width: 35px;
+    height: 35px;
+    background-color: #1db954;  
+    color: black;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+    opacity:0.8;
+}
+.profile:hover{
+    opacity:1;
+}
+.nav-right i {
+    color: white;             
+    font-size: 1rem;        
+    opacity: 0.7;            
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-right i:hover {
+    opacity: 1;               
+    transform: scale(1.05);  
+}
+
+.sidebar{
+ background-color:#000;
+ width:300px;
+ flex-shrink: 0;
+ border-radius:1rem ;  
+ margin-right: 0.5rem;
+ height:100%;
+ margin-top:5px;
+ display:flex;
+ flex-direction: column;
+}
+.library{
+    background-color:#121111;
+    border-radius: 1rem;
+    height:100%;
+    margin-top: 0rem;
+    padding:0.2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.options{
+    display:flex;
+    justify-content: space-between; /*for plus or arrow icons*/
+    align-items: center;
+    width:100%;
+    padding: 0.5rem 0.7rem;
+}
+ .lib-option img{
+    height:1.25rem;
+    width:1.25rem;
+ }
+.icons{
+    font-size: 1.25rem;
+    opacity:0.7;
+    margin-right:1rem;
+    gap:15px;
+}
+.icon1, .icon2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;                    
+    height: 35px;
+    background-color: #2f2c2c;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.icon1, .icon2 {
+    transition: all 0.2s ease; 
+    opacity: 0.7;  
+}            
+.icon1:hover, .icon2:hover {
+    opacity: 1;
+    background-color: #3e3a3a; 
+    transform: scale(1.05);    
+}
+
+
+.lib-option {
+    transition: opacity 0.2s ease;
+}
+
+.lib-option:hover {
+    opacity: 1;
+}
+
+.icons {
+    display: flex;                  
+    gap: 8px;                       
+    align-items: center;
+    opacity:0.5;
+}
+
+ .lib-option{
+    line-height:2.5rem;
+    opacity: 0.7;
+    padding:0.5rem 0.7rem;
+    display:flex;
+    gap:10px;
+    align-items: center;
+ }
+ .library:hover{
+    opacity: 1;
+ }
+
+ .lib-option i{
+    font-size :1.25rem;
+ }
+ .lib-option a {
+    font-size :1.3rem;
+    margin-left: 1rem;
+    color:white;
+}
+.icons i, .lib-option i {
+    margin-right: 0; 
+}
+.button{
+    background-color: #141212;
+
+}
+.artists-badge{
+    background-color: #363434;
+    color:white;
+    opacity:0.7;
+    font-weight: 100;
+}
+.artists-badge:hover{
+ opacity:0.9;
+    background-color: #3e3a3a; 
+    transform: scale(1.05); 
+}
+.nav{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #0f0f0f;
+    height:auto;
+    padding:2px 8px 0px 8px;
+    color:white;
+}
+.left-nav-options{
+    display:flex;
+     justify-content: space-between;
+     margin-top: 10px;
+}
+.right-nav-options{
+    margin-top: 10px;
+    text-align: center;
+    opacity:0.7;
+}
+.right-nav-options span{
+    font-size: 15px;;
+}
+.right-nav-options:hover{
+    opacity:1;
+}
+.artists-list{
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    flex-grow:1;
+    height: 20px;          /*Set a height that fits your sidebar */
+    overflow-y: auto;      /* Adds a vertical scrollbar only when needed */
+    overflow-x: hidden;
+    padding: 0 5px;
+
+}
+/* Custom Scrollbar Styling */
+.artists-list::-webkit-scrollbar {
+    width: 10px; 
+    
+}
+
+.artists-list::-webkit-scrollbar-thumb {
+    background: rgba(59, 58, 58, 0.3); 
+    border: 3px solid transparent; /* Creates a 'gap' around the thumb */
+    background-clip: padding-box;
+    border-radius: 2px;
+}
+
+.artists-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5); 
+}
+.artists-card {
+    display: flex;         /* Puts image and text side-by-side */
+    align-items: center;   /* Centers them vertically */
+    padding: 8px ;
+   
+    gap: 12px;             /* Space between image and text */
+    cursor: pointer;
+    background-color: #1a1818;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+.artists-card:hover{
+    background-color: #2f2c2c;
+}
+.artists-card img {
+    width: 48px;           /* Sets a standard Spotify thumbnail size */
+    height: 48px;
+    border-radius: 4px;    /* Slightly rounded corners like the goal image */
+    object-fit: cover;
+}
+
+/* 4. Text Styling */
+.artist-info {
+    display: flex;
+    flex-direction: column; 
+   gap:5px;
+}
+
+.artist-name {
+    color: white;           /* CRITICAL: Without this, text is invisible black */
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.artist-type {
+    color: #b3b3b3;         /* Greyish color for the subtitle */
+    font-size: 13px;
+}
+
+.container {
+    display: flex;           
+    width: 100%;
+    height: 100%;             
+    gap: 1px;                 
+    box-sizing: border-box;
+}
+.main-content {
+    flex-grow: 1;
+    background-color: #141313;
+    border-radius: 1rem;
+    overflow-y: auto;         /* Necessary for sticky to work inside this div */
+    padding: 0 ; 
+    position: relative;       /* Required for the sticky filter bar anchor */
+}
+/* maincontent scrollbar */
+.main-content::-webkit-scrollbar {
+    width: 10px; 
+    
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: rgba(96, 91, 91, 0.3); /* Transparent white like Spotify */
+    border: 3px solid transparent; /* Creates a 'gap' around the thumb */
+    background-clip: padding-box;
+    border-radius: 2px;
+}
+
+.main-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5); 
+}
+
+.sticky-filters {
+    position: sticky;
+    top: 0;
+    width:100%;
+    backdrop-filter:blur(10px);        
+    background-color:rgba(23, 22, 22, 0.8);
+    padding: 16px 0;
+    z-index: 100;            /* Ensures it stays above the scrolling artist cards */
+    display: flex;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+.sticky-filters .badge {
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.1); /* Dark grey transparent */
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+}
+
+.sticky-filters .badge.active {
+    background-color: white !important;
+    color: black !important;
+    margin-left: 4rem; 
+}
+
+.sticky-filters .badge:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.recent-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 12px;
+    padding: 10px 20px; 
+}
+
+.recent-item {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 64px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.recent-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.recent-item img,.liked-songs-square img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.recent-item span {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0 12px;
+    color:white;
+}
+.play-btn {
+    position: absolute;        /* Takes it out of the text flow */
+    right: 12px;               /* Locks it to the right edge */
+    background-color: #1ed760; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    
+    /* Hover Animation */
+    opacity: 0;                
+    transform: translateY(4px); 
+    transition: all 0.3s ease;
+}
+.recent-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.recent-item:hover .play-btn {
+    opacity: 1;                /* Fade in */
+    transform: translateY(0);  /* Slide up to original position */
+}
+
+/* Section img */
+.section-container {
+    padding: 24px 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+
+.section-header h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.show-all {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.show-all:hover {
+    text-decoration: underline;
+}
+
+/* The Square Card Grid */
+.card-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px; 
+    /* overflow-x:auto; */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow-x: scroll;
+}
+.card-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.music-card {
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    flex:0 0 180px;
+   
+}
+
+.music-card:hover {
+    background-color: #282828;
+}
+
+.img-container {
+    position: relative;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.img-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    object-fit: cover;
+ 
+}
+
+/* Reuse your play-btn logic with a slight tweak for position */
+.music-card .play-btn {
+    position: absolute;
+    right: 8px;
+    bottom: 8px; /* Moves it to bottom right of the image */
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.3s ease;
+}
+
+.music-card:hover .play-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.music-card h4 {
+    color: white;
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    /* Truncate text if too long */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.music-card p {
+    color: #b3b3b3;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    margin: 0;
+    /* Show only 2 lines of description */
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text-group{
+    margin-left:23px;
+}
+.text-group span{
+     color: #817f7f;
+     font-size: 13px;
+}
+/* large card grid */
+.large-card-grid {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 20px;
+}
+
+.large-card-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.feature-card {
+    position: relative;
+    flex: 0 0 450px; /* Much wider than standard cards */
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.02);
+}
+
+.card-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    display: flex;
+    align-items: flex-start; /* Matches your screenshot layout */
+    padding: 24px;
+}
+
+.overlay-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px; /* Pushes content down slightly from top */
+}
+
+.mini-art {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.text-group h3 {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.text-group p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    margin: 4px 0 0 0;
+}
+/* bottom nav */
+.album{
+    width:25%;
+    display:flex;
+    align-items: center;
+   
+}
+.player{
+    width:50%;
+
+}
+.control{
+    width:25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.music-player {
+    background-color: #111010;
+    color: #fff;
+    position: fixed; /* Crucial: Keeps it at the bottom */
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 80px; /* Standard Spotify player height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1000; /* Ensures it stays above the main content */
+}
+
+
+.main {
+    padding-bottom: 80px; 
+}
+
+.player {
+    /* width: 50%; */
+       flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+   
+}
+
+.player-controls{
+    display:flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap:0.1rem;
+}
+.player-control-icon{
+    height:1rem;
+    margin-right: 1.75rem;
+    opacity:0.7;
+}
+.player-control-icon:hover{
+    opacity:1;
+}
+
+
+.icon-dim{
+    opacity: 0.4;
+}
+.icon-dim:hover{
+    opacity:0.7;
+}
+.playback-bar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:70%;
+    gap:0.8rem;
+    margin-right:2rem;
+
+}
+.progress-bar{
+    width:100%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    flex:1;
+     align-items: center;
+}
+.progress-bar::-webkit-slider-runnable-track{
+   background-color: #ddd;
+   border-radius: 100px;
+   height:0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height:1rem;
+    width:1rem;
+    background-color:#1bd760 ;
+    border-radius: 50%;
+    margin-top:-6px ;/*-ve margin shift top*/
+}
+.track{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.album-img{
+    height: 3.5rem;
+    width: 3.5rem;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-left: 1rem;
+}
+
+.song-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:0.3rem;
+}
+
+.title{
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.title:hover{
+    text-decoration: underline;
+}
+.singer {
+    color: #b3b3b3;
+    text-decoration: none;
+     margin: 0;
+    font-size: 0.75rem;
+    opacity:0.8;
+}
+
+.singer:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.album-icons {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #b3b3b3; /* The circle outline color */
+    border-radius: 50%;        /* This makes it a perfect circle */
+    display: flex;
+    align-items: center;       /* Centers the plus vertically */
+    justify-content: center;    /* Centers the plus horizontally */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.album-icons i {
+    font-size: 10px;           /* Size of the plus sign inside */
+    color: #b3b3b3;
+}
+
+/* Spotify hover effect */
+.album-icons:hover {
+    border-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.album-icons:hover i {
+    color: #ffffff;
+}
+  
+
+.al_box{
+    height:2.4rem;
+    margin-left: 0.1rem;
+    position: relative;
+    top: 3.5px; 
+    opacity:0.7;
+}
+.al_box:hover{
+    opacity:1;
+}
+.al_heart{
+    height:1.5rem;
+    opacity:0.7;
+   
+}
+ .al_heart:hover{
+    opacity:1;
+ }
+.media{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:2rem;
+    gap:5px;
+    
+}
+.media-control-icon{
+    height:3rem;
+    display: flex;
+    align-items: center; 
+    margin:2px;
+    opacity:0.7;
+    gap:10px;
+}
+.media-control-icon:hover{
+    opacity:1;
+}
+
+.icon-dim{
+    opacity: 0.4;
+}
+.icon-dim:hover{
+    opacity:0.7;
+}
+ 
+ .control-bar{
+    width:30%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer; 
+}
+ 
+.control-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+   border-radius: 100px;
+   height:0.2rem;          
+}
+ 
+.control-bar::-webkit-slider-thumb{ 
+    appearance: none;
+    height:0.9rem;
+    width:0.9rem;
+    background-color:#1bd760 ;
+    border-radius: 50%;
+    margin-top:-6px ;
+}
+.spotify-footer {
+   padding: 40px 32px;
+    padding-bottom: 100px; 
+    background-color: #121212;
+    margin-top: 50px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-title {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-column a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-socials {
+    margin-left: auto; 
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #292929;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    background-color: #727272;
+}
+
+.footer-line-top {
+    margin-bottom: 60px;
+    width:100%;
+    height:50%;
+    border-top: 1px solid rgb(29, 28, 28);
+    opacity:0.4;
+}
+.footer-line {
+    margin-top: 50px;
+    width:100%;
+    height:40%;
+    border-top: 1px solid rgb(24, 23, 23);
+    opacity:0.4;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.legal-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.legal-links a, .copyright {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.legal-links a:hover {
+    color: white;
+}
